@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bienvenido.md",
+                "file": "INICIO/Bienvenido.md",
                 "mode": "source",
                 "source": false
               },
@@ -202,6 +202,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
+      "obsidian-kanban:Create new board": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo lienzo": false,
@@ -212,9 +214,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a9122b9f6a03e5e6",
+  "active": "b03b406175c71d66",
   "lastOpenFiles": [
+    "DIARIO DE DESARROLLO",
+    "ARTE Y SONIDO",
+    "TÉCNICO",
+    "MUNDO",
+    "PERSONAJES",
+    "DISEÑO DE JUEGO",
+    "INICIO",
     "cree un enlace.md",
-    "Bienvenido.md"
+    "INICIO/Bienvenido.md"
   ]
 }
