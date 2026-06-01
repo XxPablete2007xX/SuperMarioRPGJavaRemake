@@ -90,4 +90,13 @@ public class App extends Application {
         }
         
     }
+    
+    
+    public static void guardarDatos(){
+        try {
+            Ficheros.escribirTabla(jugadores, ficheroJugadores);
+        } catch (IOException e) {
+            FuncionesGraficas.warning("ERROR", e.getMessage());
+        }
+    }
 }

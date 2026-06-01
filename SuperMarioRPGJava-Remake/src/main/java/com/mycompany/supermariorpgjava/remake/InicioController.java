@@ -35,6 +35,7 @@ public class InicioController implements Initializable {
     AudioClip sfxElegir;
     Media fileIntro; 
     MediaPlayer audioIntro;
+    final String ver = "v0.3";
     
     private static ArrayList<Jugador> jugadores;
     
@@ -68,6 +69,7 @@ public class InicioController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        version.setText(ver);
         imgIni = new Image(getClass().getResource("/img/titulo.png").toExternalForm());
         imgFlecha = new Image(getClass().getResource("/img/flecha.png").toExternalForm());
         sfxElegir = new AudioClip(getClass().getResource("/sfx/elegir.mp3").toExternalForm());
@@ -162,11 +164,13 @@ public class InicioController implements Initializable {
     }
 
     @FXML
-    private void abrirCreditos(ActionEvent event) {
+    private void abrirCreditos(ActionEvent event) throws IOException {
+        App.abrirNuevaPantalla("Creditos");
     }
 
     @FXML
     private void salir(ActionEvent event) {
+        App.guardarDatos();
         System.exit(0);
     }
     
